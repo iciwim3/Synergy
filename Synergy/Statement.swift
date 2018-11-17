@@ -8,10 +8,11 @@
 
 import Foundation
 
-struct Statement {
-    
+struct Statement: Codable {
+
+    var category: String?
     var statement: String?
     var answers: [Int]?
-    var category: String?
+    var categoryIndex: Int?
     
 }

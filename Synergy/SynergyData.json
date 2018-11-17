@@ -1,0 +1,602 @@
+[
+  {
+    "category": "Catalyst",
+    "statement": "I enjoy doing new things.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I to research things.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm responsible.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I enjoy bringing people together.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I like being spontaneous.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I like to invent new ways to do things.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I like to plan things out.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I enjoy being a team player.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I often take risks.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I do my job with accuracy and efficiency.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I pay close attention to deadlines.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I thrive in environments that are highly communicative.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I'm always having fun.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I prefer working alone.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm always on time.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I'm attentive to the needs of others.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "Going on new adventures is important to me.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "Solving problems is important to me.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "Saving money is important to me.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "Honesty and openness is important to me.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I'm unpredictable.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I'm knowledgeable.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm organized.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I'm personable.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I value excitement.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I value privacy.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I value loyalty.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I value others.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I have a blast.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I see outside the box.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I see things as black and white.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I inspire others.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I'm skilled at many things.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I study things carefully.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I make wise decisions.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I go beneath the surface with others.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I'm very courageous.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I'm very competent.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm very practical.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I'm very authentic.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I value speed.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I value fairness.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I value traditions.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I value relationships.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I'm resourceful.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I'm a visionary.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm a concerned helper.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I'm flexible.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I have great instincts.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I have intelligence.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I have standards.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I have creative genius.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "Stinginess is my pet peeve.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "Attention seeking is my pet peeve.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "Lateness is my pet peeve.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "Insensitivity is my pet peeve.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I am a free thinker.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I am independent.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I am committed.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I am motivating.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "It's important to realize relationships are exciting.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "It's important to realize relationships are hard.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "It's important to realize relationships are serious.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "It's important to realize relationships are beautiful.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I focus on competition.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I focus on making smart decisions.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I focus on getting my work done.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I focus on using my imagination.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I care about the experience.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I care about what makes sense.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I care about what's right.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I care about people.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I cannot deal with micromanaging.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I cannot deal with incompetence.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I cannot deal with disorganization.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I cannot deal with rudeness.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I must get started.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I must think this through.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I must plan ahead.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I must help.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I just get things done.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I use my brain power.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm proud to serve.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I never burn bridges.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I often hear that I'm rude.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I often struggle to make decisions.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I often worry.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I often avoid conflict.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I could be more considerate of people.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I could be less standoffish.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I could be more relaxed.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I could be more upfront with people.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "People sometimes feel I'm too impulsive.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "People sometimes feel I'm a know it all.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "People sometimes feel I'm too strict.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "People sometimes feel I give too much to others.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  },
+  {
+    "category": "Catalyst",
+    "statement": "I color outside the lines.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 0
+  },
+  {
+    "category": "Analyst",
+    "statement": "I think work is play.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 1
+  },
+  {
+    "category": "Stabilizer",
+    "statement": "I'm very detailed oriented.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 2
+  },
+  {
+    "category": "Harmonizer",
+    "statement": "I thrive off of interaction.",
+    "answers": [1, 2, 3, 4],
+    "categoryIndex": 3
+  }
+]
