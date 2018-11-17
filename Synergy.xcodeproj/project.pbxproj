@@ -12,6 +12,9 @@
 		438821F5219FC7BE000F2E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438821F3219FC7BE000F2E0D /* Main.storyboard */; };
 		438821F7219FC7BF000F2E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438821F6219FC7BF000F2E0D /* Assets.xcassets */; };
 		438821FA219FC7BF000F2E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438821F8219FC7BF000F2E0D /* LaunchScreen.storyboard */; };
+		43882202219FC7F9000F2E0D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43882201219FC7F9000F2E0D /* GradientView.swift */; };
+		43882204219FD0DF000F2E0D /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43882203219FD0DF000F2E0D /* Statement.swift */; };
+		43882206219FDC77000F2E0D /* SynergyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43882205219FDC77000F2E0D /* SynergyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		438821F6219FC7BF000F2E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438821F9219FC7BF000F2E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438821FB219FC7BF000F2E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43882201219FC7F9000F2E0D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		43882203219FD0DF000F2E0D /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		43882205219FDC77000F2E0D /* SynergyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynergyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				438821EF219FC7BE000F2E0D /* AppDelegate.swift */,
 				438821F1219FC7BE000F2E0D /* ViewController.swift */,
+				43882203219FD0DF000F2E0D /* Statement.swift */,
+				43882205219FDC77000F2E0D /* SynergyModel.swift */,
 				438821F3219FC7BE000F2E0D /* Main.storyboard */,
+				43882201219FC7F9000F2E0D /* GradientView.swift */,
 				438821F6219FC7BF000F2E0D /* Assets.xcassets */,
 				438821F8219FC7BF000F2E0D /* LaunchScreen.storyboard */,
 				438821FB219FC7BF000F2E0D /* Info.plist */,
@@ -137,6 +146,9 @@
 			files = (
 				438821F2219FC7BE000F2E0D /* ViewController.swift in Sources */,
 				438821F0219FC7BE000F2E0D /* AppDelegate.swift in Sources */,
+				43882202219FC7F9000F2E0D /* GradientView.swift in Sources */,
+				43882204219FD0DF000F2E0D /* Statement.swift in Sources */,
+				43882206219FDC77000F2E0D /* SynergyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
