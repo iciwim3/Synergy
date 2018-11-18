@@ -18,13 +18,24 @@ class ViewController: UIViewController {
     var statementIndex = 0
     var selectedAnswer = 0
     var categoryScores = ["Catalyst": 0, "Analyst": 0, "Stabilizer": 0, "Harmonizer": 0]
+    
+    var resultVC: ResultsViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup result dialog view controller
+        resultVC = storyboard?.instantiateViewController(withIdentifier: "ResultVC") as? ResultsViewController
+        resultVC?.delegate = self
+        resultVC?.modalPresentationStyle = .overCurrentContext
+        
         // Conform to tableview protocols
         statementTableView.delegate = self
         statementTableView.dataSource = self
+        
+        // Configure the tableview for dynamic row height
+        statementTableView.estimatedRowHeight = 50
+        statementTableView.rowHeight = UITableView.automaticDimension
         
         // Set self as delegate for model and call getStatements
         model.delegate = self
@@ -66,7 +77,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         // Get the label
         let label = cell.viewWithTag(1) as! UILabel
         
-        // TODO: Set the text for label
+        // Set the text for label
         label.text = String(statements[statementIndex].answers![indexPath.row])
         
         return cell
@@ -74,26 +85,58 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Check against statement index being out of bounds
+        guard statementIndex < statements.count else {
+            return
+        }
+        
+        // Declare variables for the popup
+        let title = "Scores"
+        let action: String = "Next"
+        
         // User has selected an answer
         let categoryIndex = statements[statementIndex].categoryIndex
         
         switch categoryIndex {
         case 0:
-            categoryScores["Catalyst"]! += 1
-            print("Category score is: \()")
-            return
+            if var catalyst = categoryScores["Catalyst"] {
+                catalyst += indexPath.row + 1
+                categoryScores["Catalyst"] = catalyst
+            }
+            
         case 1:
-            categoryScores["Analyst"]! += 1
-            return
+            if var analyst = categoryScores["Analyst"] {
+                analyst += indexPath.row + 1
+                categoryScores["Analyst"] = analyst
+            }
+            
         case 2:
-            categoryScores["Stabilizer"]! += 1
-            return
+            if var stabilizer = categoryScores["Stabilizer"] {
+                stabilizer += indexPath.row + 1
+                categoryScores["Stabilizer"] = stabilizer
+            }
+            
         case 3:
-            categoryScores["Harmonizer"]! += 1
-            return
+            if var harmonizer = categoryScores["Harmonizer"] {
+                harmonizer += indexPath.row + 1
+                categoryScores["Harmonizer"] = harmonizer
+            }
+            
         default:
             print("Select something!")
         }
+       
+        if resultVC != nil {
+            
+            present(resultVC!, animated: true) {
+                // Set the message for the popup
+                self.resultVC?.setPopUp(withTitle: title, forCatalystScore: "\(self.categoryScores["Catalyst"]!)", forAnalystScore: "\(self.categoryScores["Analyst"]!)", forStabilizerScore: "\(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "\(self.categoryScores["Harmonizer"]!)", withAction: action)
+            }
+        }
+        
+        // Increment statement index to advance to next question
+        statementIndex += 1
     }
 
 }
@@ -107,6 +150,42 @@ extension ViewController: SynergyProtocol {
         
         // Display the first question
         displayStatement()
+    }
+}
+
+// MARK: - ResultViewControllerProtocol methods
+extension ViewController: ResultViewControllerProtocol {
+    func resultViewDismissed() {
+        
+        // Check the statement index
+        
+        
+        // If the statement index == question count then we have finished the last question
+        if statementIndex == statements.count {
+            
+            if resultVC != nil {
+                // Show summary
+                present(resultVC!, animated: true) {
+                    self.resultVC?.setPopUp(withTitle: "Summary", forCatalystScore: "Catalyst total: \(self.categoryScores["Catalyst"]!)", forAnalystScore: "Analyst total: \(self.categoryScores["Analyst"]!)", forStabilizerScore: "Stabilizer total: \(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "Harmonizer total: \(self.categoryScores["Harmonizer"]!)", withAction: "Restart")
+                }
+            }
+            statementIndex += 1
+        }
+        else if statementIndex > statements.count {
+            
+            // Restart assessment
+            categoryScores["Catalyst"] = 0
+            categoryScores["Analyst"] = 0
+            categoryScores["Stabilizer"] = 0
+            categoryScores["Harmonizer"] = 0
+            statementIndex = 0
+            displayStatement()
+            
+        }
+        else {
+            // Display next question when Result VC has been dismissed
+            displayStatement()
+        }
     }
 }
 

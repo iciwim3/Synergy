@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		437A31B421A056B800F2E44A /* SynergyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 437A31B321A056B700F2E44A /* SynergyData.json */; };
+		4315832521A0DE1700995674 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315832421A0DE1700995674 /* ResultsViewController.swift */; };
+		4315832921A105A600995674 /* SynergyData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4315832821A105A600995674 /* SynergyData.json */; };
 		438821F0219FC7BE000F2E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438821EF219FC7BE000F2E0D /* AppDelegate.swift */; };
 		438821F2219FC7BE000F2E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438821F1219FC7BE000F2E0D /* ViewController.swift */; };
 		438821F5219FC7BE000F2E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438821F3219FC7BE000F2E0D /* Main.storyboard */; };
@@ -19,7 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		437A31B321A056B700F2E44A /* SynergyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SynergyData.json; sourceTree = "<group>"; };
+		4315832421A0DE1700995674 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		4315832821A105A600995674 /* SynergyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SynergyData.json; sourceTree = "<group>"; };
 		438821EC219FC7BE000F2E0D /* Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Synergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438821EF219FC7BE000F2E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438821F1219FC7BE000F2E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,9 +66,10 @@
 			children = (
 				438821EF219FC7BE000F2E0D /* AppDelegate.swift */,
 				438821F1219FC7BE000F2E0D /* ViewController.swift */,
+				4315832421A0DE1700995674 /* ResultsViewController.swift */,
 				43882203219FD0DF000F2E0D /* Statement.swift */,
-				437A31B321A056B700F2E44A /* SynergyData.json */,
 				43882205219FDC77000F2E0D /* SynergyModel.swift */,
+				4315832821A105A600995674 /* SynergyData.json */,
 				438821F3219FC7BE000F2E0D /* Main.storyboard */,
 				43882201219FC7F9000F2E0D /* GradientView.swift */,
 				438821F6219FC7BF000F2E0D /* Assets.xcassets */,
@@ -137,7 +140,7 @@
 				438821FA219FC7BF000F2E0D /* LaunchScreen.storyboard in Resources */,
 				438821F7219FC7BF000F2E0D /* Assets.xcassets in Resources */,
 				438821F5219FC7BE000F2E0D /* Main.storyboard in Resources */,
-				437A31B421A056B800F2E44A /* SynergyData.json in Resources */,
+				4315832921A105A600995674 /* SynergyData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +156,7 @@
 				43882202219FC7F9000F2E0D /* GradientView.swift in Sources */,
 				43882204219FD0DF000F2E0D /* Statement.swift in Sources */,
 				43882206219FDC77000F2E0D /* SynergyModel.swift in Sources */,
+				4315832521A0DE1700995674 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
