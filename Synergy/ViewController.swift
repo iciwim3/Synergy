@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var dialogOKButton: UIButton!
     @IBOutlet weak var dialogView: UIView!
     
+    @IBOutlet weak var rootStackView: UIStackView!
+    
+    // StackView IBOutlet Constraints
+    @IBOutlet weak var stackViewTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var stackViewLeadingConstraint: NSLayoutConstraint!
+    
     var model = SynergyModel()
     var statements = [Statement]()
     var statementIndex = 0
@@ -64,6 +70,9 @@ class ViewController: UIViewController {
         
         // Display the answers
         statementTableView.reloadData() // This asks the tableview for the number of rows in section and cellForRowAt index path
+        
+        // Animate the question into view
+        slideInQuestion()
     }
     
     @IBAction func dialogOKButtonTapped(_ sender: UIButton) {
@@ -72,6 +81,45 @@ class ViewController: UIViewController {
         
         // Display the first question
         displayStatement()
+    }
+    
+    func slideInQuestion() {
+        
+        // Set the starting state
+        rootStackView.alpha = 0
+        stackViewLeadingConstraint.constant = 1000
+        stackViewTrailingConstraint.constant = -1000
+        view.layoutIfNeeded()
+        
+        // Animate the ending state
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
+            
+            self.rootStackView.alpha = 1
+            self.stackViewLeadingConstraint.constant = 0
+            self.stackViewTrailingConstraint.constant = 0
+            self.view.layoutIfNeeded()
+            
+        }, completion: nil)
+    }
+    
+    func slideOutQuestion() {
+        
+        // Set the starting state
+        rootStackView.alpha = 1
+        stackViewLeadingConstraint.constant = 0
+        stackViewTrailingConstraint.constant = 0
+        view.layoutIfNeeded()
+        
+        // Animate the ending state
+        UIView.animate(withDuration: 0.8, delay: 0, options: .curveEaseIn, animations: {
+            
+            self.rootStackView.alpha = 0
+            self.stackViewLeadingConstraint.constant = -1000
+            self.stackViewTrailingConstraint.constant = 1000
+            self.view.layoutIfNeeded()
+            
+        }, completion: nil)
+        
     }
 
 }
@@ -143,7 +191,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         default:
             print("Select something!")
         }
-       
+        
+        // Slide out question
+        slideOutQuestion()
+        
+        // Display the popup
         if resultVC != nil {
             
             present(resultVC!, animated: true) {

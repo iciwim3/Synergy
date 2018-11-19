@@ -141,7 +141,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="LXw-Dy-k5t">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="LXw-Dy-k5t">
                                         <rect key="frame" x="20" y="222.5" width="335" height="222"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -312,6 +312,9 @@
                         <outlet property="dialogOKButton" destination="FTH-ao-FIM" id="dlV-2r-IpE"/>
                         <outlet property="dialogView" destination="1dl-Iz-Dpa" id="LmO-B7-TbB"/>
                         <outlet property="dimView" destination="o0d-hK-Ika" id="ZwO-SU-LYF"/>
+                        <outlet property="rootStackView" destination="fOg-c5-Jdr" id="scb-hy-1xf"/>
+                        <outlet property="stackViewLeadingConstraint" destination="FYz-37-0qQ" id="aBI-Hj-jrq"/>
+                        <outlet property="stackViewTrailingConstraint" destination="bcq-3F-V05" id="PID-Lt-QrT"/>
                         <outlet property="statementLabel" destination="LXw-Dy-k5t" id="azy-Pz-HHf"/>
                         <outlet property="statementTableView" destination="xd1-rs-gyh" id="KCx-ID-24z"/>
                     </connections>
@@ -330,7 +333,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-R6-XYp" userLabel="DimView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUy-89-k0b" userLabel="DialogView">
                                 <rect key="frame" x="40" y="120" width="295" height="447"/>
@@ -457,13 +460,17 @@
                         <viewLayoutGuide key="safeArea" id="wf1-QO-Kyf"/>
                     </view>
                     <connections>
+                        <outlet property="analystLabel" destination="WoF-Nk-cL0" id="Xua-rz-lNY"/>
                         <outlet property="analystScoreLabel" destination="QXr-h9-2g6" id="LPl-O4-wnT"/>
+                        <outlet property="catalystLabel" destination="bjf-gY-vNg" id="F0P-f8-upE"/>
                         <outlet property="catalystScoreLabel" destination="WAn-Bf-Cct" id="F1A-yP-G1c"/>
                         <outlet property="dialogView" destination="YUy-89-k0b" id="dyg-AZ-4yM"/>
                         <outlet property="dimView" destination="rZg-R6-XYp" id="qOV-C9-DCR"/>
                         <outlet property="dismissButton" destination="sUe-Ti-z4d" id="WOd-yt-zrr"/>
+                        <outlet property="harmonizerLabel" destination="1rs-Jx-L30" id="ZeE-1s-Slz"/>
                         <outlet property="harmonizerScoreLabel" destination="uxC-zK-JnI" id="WTV-Av-2f0"/>
                         <outlet property="scoresLabel" destination="2wr-0J-UAw" id="Rl6-2u-753"/>
+                        <outlet property="stabilizerLabel" destination="ZhU-K7-7xa" id="oix-uc-EpO"/>
                         <outlet property="stabilizerScoreLabel" destination="e3a-yr-G7z" id="fwE-r7-wSw"/>
                     </connections>
                 </viewController>
