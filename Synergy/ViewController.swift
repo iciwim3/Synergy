@@ -229,7 +229,7 @@ extension ViewController: ResultViewControllerProtocol {
             if resultVC != nil {
                 // Show summary
                 present(resultVC!, animated: true) {
-                    self.resultVC?.setPopUp(withTitle: "Summary", forCatalystScore: "Your Catalyst total is: \(self.categoryScores["Catalyst"]!)", forAnalystScore: "Your Analyst total is: \(self.categoryScores["Analyst"]!)", forStabilizerScore: "Your Stabilizer total is: \(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "Your Harmonizer total is: \(self.categoryScores["Harmonizer"]!)", withAction: "Restart")
+                    self.resultVC?.setPopUp(withTitle: "Summary", forCatalystScore: "total is: \(self.categoryScores["Catalyst"]!)", forAnalystScore: "total is: \(self.categoryScores["Analyst"]!)", forStabilizerScore: "total is: \(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "total is: \(self.categoryScores["Harmonizer"]!)", withAction: "Restart")
                 }
             }
             // Increment the question index so that the next time the user dismisses the dialog, we go into the next branch of IF statement

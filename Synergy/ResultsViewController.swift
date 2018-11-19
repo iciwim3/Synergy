@@ -108,10 +108,9 @@ class ResultsViewController: UIViewController {
             
             // Only dismiss after dim view has faded out
             self.dismiss(animated: true, completion: nil)
+            self.delegate?.resultViewDismissed()
         }
-        
-        delegate?.resultViewDismissed()
-        
+
     }
     
 }
