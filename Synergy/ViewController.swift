@@ -12,17 +12,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var statementLabel: UILabel!
     @IBOutlet weak var statementTableView: UITableView!
+    @IBOutlet weak var dimView: UIView!
+    @IBOutlet weak var dialogOKButton: UIButton!
+    @IBOutlet weak var dialogView: UIView!
     
     var model = SynergyModel()
     var statements = [Statement]()
     var statementIndex = 0
-    var selectedAnswer = 0
     var categoryScores = ["Catalyst": 0, "Analyst": 0, "Stabilizer": 0, "Harmonizer": 0]
     
     var resultVC: ResultsViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Show the Dim View's background color
+        dimView.isHidden = false
+        
+        // Round the corners of the Dialog View and the dialog OK Button
+        dialogView.layer.cornerRadius = 10
+        dialogOKButton.layer.cornerRadius = 10
         
         // Setup result dialog view controller
         resultVC = storyboard?.instantiateViewController(withIdentifier: "ResultVC") as? ResultsViewController
@@ -55,6 +64,14 @@ class ViewController: UIViewController {
         
         // Display the answers
         statementTableView.reloadData() // This asks the tableview for the number of rows in section and cellForRowAt index path
+    }
+    
+    @IBAction func dialogOKButtonTapped(_ sender: UIButton) {
+        dimView.isHidden = true
+        dialogView.isHidden = true
+        
+        // Display the first question
+        displayStatement()
     }
 
 }
@@ -147,28 +164,23 @@ extension ViewController: SynergyProtocol {
         
         // Set our questions property with the questions from quiz model
         self.statements = statements
-        
-        // Display the first question
-        displayStatement()
     }
 }
 
 // MARK: - ResultViewControllerProtocol methods
 extension ViewController: ResultViewControllerProtocol {
     func resultViewDismissed() {
-        
-        // Check the statement index
-        
-        
+
         // If the statement index == question count then we have finished the last question
         if statementIndex == statements.count {
             
             if resultVC != nil {
                 // Show summary
                 present(resultVC!, animated: true) {
-                    self.resultVC?.setPopUp(withTitle: "Summary", forCatalystScore: "Catalyst total: \(self.categoryScores["Catalyst"]!)", forAnalystScore: "Analyst total: \(self.categoryScores["Analyst"]!)", forStabilizerScore: "Stabilizer total: \(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "Harmonizer total: \(self.categoryScores["Harmonizer"]!)", withAction: "Restart")
+                    self.resultVC?.setPopUp(withTitle: "Summary", forCatalystScore: "Your Catalyst total is: \(self.categoryScores["Catalyst"]!)", forAnalystScore: "Your Analyst total is: \(self.categoryScores["Analyst"]!)", forStabilizerScore: "Your Stabilizer total is: \(self.categoryScores["Stabilizer"]!)", forHarmonizerScore: "Your Harmonizer total is: \(self.categoryScores["Harmonizer"]!)", withAction: "Restart")
                 }
             }
+            // Increment the question index so that the next time the user dismisses the dialog, we go into the next branch of IF statement
             statementIndex += 1
         }
         else if statementIndex > statements.count {
