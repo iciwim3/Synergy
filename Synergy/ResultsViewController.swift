@@ -48,6 +48,7 @@ class ResultsViewController: UIViewController {
         
         // Set rounded corners for Dialog View
         dialogView.layer.cornerRadius = 10
+        dismissButton.layer.cornerRadius = 10
         
         // Set the alpha for the dim view and elements to zero
         scoresLabel.alpha = 0
